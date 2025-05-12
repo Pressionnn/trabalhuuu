@@ -1,0 +1,38 @@
+/* Estilo para o body */
+body {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: center; /* Centraliza no eixo vertical */
+    align-items: center; /* Centraliza no eixo horizontal */
+    height: 100vh; /* Faz o body ocupar 100% da altura da tela */
+    margin: 0; /* Remove a margem padrão */
+    text-align: center; /* Centraliza os textos */
+    background-image: url('code.jpg'); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    color: white; /* Cor do texto geral para melhorar a visibilidade */
+}
+
+/* Estilo para a div que contém a imagem */
+.imagem-container {
+    text-align: center; /* Garante que a imagem fique centralizada */
+}
+
+/* Estilo para as imagens */
+img {
+    max-width: 100%; /* A imagem nunca ultrapassará a largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para o título h1 */
+h1 {
+    color: rgba(255, 0, 0, 0.8); /* Vermelho com transparência para maior legibilidade */
+    margin-top: 20px; /* Espaço superior */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para aumentar o contraste */
+}
+
+/* Estilo para o subtítulo h2 */
+h2 {
+    color: rgba(128, 0, 128, 0.8); /* Roxo com transparência */
+    margin-top: 20px; /* Espaço superior */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para aumentar o contraste */
+}

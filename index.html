@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho do Robson</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start; /* Alinha tudo à esquerda */
+            height: 100vh;
+            margin: 0;
+            text-align: left; /* Deixa o texto alinhado à esquerda */
+            background-image: url('code.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            padding-left: 20px; /* Adiciona um pequeno espaçamento da borda esquerda */
+        }
+
+        h1 {
+            color: red;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: purple;
+            margin-top: 20px;
+        }
+
+        /* Estilo para as imagens ficarem lado a lado no lado esquerdo */
+        .imagens-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 20px; /* Espaço abaixo das imagens */
+        }
+
+        /* Estilo para o GIFs ficarem abaixo da imagem principal, tudo à esquerda */
+        .gif-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 20px; /* Espaço entre a primeira imagem e o GIF */
+        }
+
+        .info-inferior {
+            position: fixed;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            max-width: 300px;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #000;
+            text-align: justify;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <section id="" tabindex="0">
+        <h1></h1>
+
+        <div class="imagens-container">
+            <img src="" alt="Macaco estiloso">
+            <img src="scene2.webp" alt="Cena estilo macaco" width="300">
+        </div>
+
+        <div class="gif-container">
+            <button onclick="mostrarImagem()">Mostrar Imagem</button>
+
+            <img id="imagem" src="https://i.gifer.com/5TMy.gif" style="display: none; width: 300px;">
+            <img src="https://i.gifer.com/5TMy.gif" alt="GIF da pessoa andando" width="300">
+        </div>
+
+        <h2></h2>
+    </section>
+
+    <!-- QUADRADO COM AS INFORMAÇÕES NO MEIO DIREITO -->
+    <div class="info-inferior">
+        <p>
+            Uma tag genérica usada para agrupar elementos e estruturar o layout de uma página. Muito útil para organizar o conteúdo. <br><br>
+            Abas (Tabs): São usadas para organizar conteúdo em diferentes seções, permitindo ao usuário navegar entre elas sem carregar uma nova página. Elas geralmente envolvem botões, links e algum JavaScript para alternar o conteúdo visível. <br><br>
+            background-color: usado para definir a cor de fundo de um elemento HTML. <br><br>
+            font-size: Define o tamanho da fonte. <br><br>
+            text-align: Controla o alinhamento do texto (esquerda, direita, centralizado ou justificado). <br><br>
+            color: Define a cor do texto. <br><br>
+            text-transform: Controla a transformação das letras (maiúsculas, minúsculas, capitalização).
+        </p>
+    </div>
+
+    <script>
+        function mostrarImagem() {
+            document.getElementById("imagem").style.display = "block";
+        }
+    </script>
+</body>
+</html>
